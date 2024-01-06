@@ -1,0 +1,21 @@
+My solution info
+Intuition
+Two Sum is a problem that needs to be solved by iterating through the list and comparing the complement with values in a hashtable where we are storing the numbers already iterated and the index of those numbers. The complement is the current number being iterated minus the target.
+So complement = num-target. If complement is in seenNums, we have found a solution.
+return nothing if there's no solution.
+
+Approach
+Start by initializing a hashtable for seen numbers, and initializing indexCount, which will be the value in the this key-value pair. The key will be the current num being iterated.
+
+Start iterating throught the list provided, find the current complement, evaluate the condition of complement being in the seenNum hashtable, and return the indexCount and the index of the complement.
+If the conditiion is never reached during the iterations, return an empty list.
+That's how it's done it python, so easy!
+
+Complexity
+Time complexity:
+Worst case time complexity O(n)
+
+Space complexity:
+O(n)
+
+https://leetcode.com/problems/two-sum/solutions/4513407/python-two-sum-solution-detailed-comments-intuition-beats-91-of-users-o-n-time-complexity/
